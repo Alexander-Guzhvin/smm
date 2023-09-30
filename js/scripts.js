@@ -234,7 +234,7 @@ function setReasonsAnimateTwo(index) {
 			: currentIndex2++
 
 		setReasonsAnimateTwo(currentIndex2)
-	}, 3000)
+	}, 1400)
 }
 
 function setReasonsAnimateThree(index) {

@@ -863,9 +863,13 @@ background: #1341B2;
 .video{
     margin-left: 9.3px;
     margin-top: 7px;
-    height: 567px;
+    height: 564px;
     border-radius: 33px;
     z-index: 2;
+}
+.info-home__logo-s img{
+    width: 36.2px;
+    height: 36.2px;
 }
 .home__phone{
     position: absolute;
@@ -976,7 +980,11 @@ text-align: left;
 
 
 
-
+.reasons__img{
+    position: absolute;
+    right: 325px;
+    bottom: 245px;
+}
 
 
 
@@ -2017,8 +2025,9 @@ position: relative;
 }
 .results__item{
     text-align: center;
-    display: flex;
+    display: inline;
     flex-direction: column;
+    max-width: 347px;
 }
 .results__content-top{
     display: flex;
@@ -2140,19 +2149,26 @@ color: #202020;
     text-align: center;
 }
 .contact__button{
-        background: linear-gradient(94.67deg, #71CA00 0%, #009A7E 100%);
-      padding: 10px 18px 10px 44px;
-      border-radius: 49px;
-      font-size: 22px;
-      font-weight: 600;
-      line-height: 16px;
-      letter-spacing: 0em;
-      margin-top: 10px;
-      text-align: left;
-      color: #F5F5FC;
-      position: relative;  
-      width: 238px;
-      margin: 23px auto 0;
+    background: linear-gradient(94.67deg, #71CA00 0%, #009A7E 100%);
+    padding: 10px 18px 10px 44px;
+    border-radius: 49px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    margin-top: 10px;
+    text-align: left;
+    color: #F5F5FC;
+    position: relative;
+    width: 217px;
+    margin: 0 auto;
+    font-family: 'SF Pro Text';
+font-size: 22px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .contact__button::before{
@@ -2618,10 +2634,11 @@ margin-top: 22px;
 @keyframes rocket{
 
     0%{
-        margin-top: -30px;
+        bottom: 275px;
+
     }
     100%{
-        margin-top: 30px;
+        bottom: 215px;
     }
     }
     @keyframes fire{
@@ -2837,7 +2854,12 @@ margin-top: 22px;
 
 
 
-
+.works__subtitle{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+}
 
 
 @media (max-width: 1899px) { 
@@ -2846,9 +2868,7 @@ margin-top: 22px;
     {
         margin-right: -800px;
     }
-    .reasons .works__items{
-        height: auto;
-    }
+
 
     .reasons .how__items{
         height: auto;
@@ -2861,8 +2881,15 @@ margin-top: 22px;
     {
         height: 892px;
     }
-
-
+    .reasons__img{
+        right: 125px;
+    }
+    .fire{
+        right: 190px;
+    }
+    .about__stars{
+        right: 40px;
+    }
     .reasons .items .item
     {
         font-size: 26px;
@@ -2897,6 +2924,22 @@ margin-top: 22px;
     }
     .reasons .how__items{
         height: auto;
+    }
+    .reasons .works__items{
+        height: auto;
+    }
+    .works__img{
+        right: 0;
+    }
+    .tags__man{
+        right: 0;
+    }
+    .tags__approved{
+        right: 180px;
+    }
+    .reasons .works__items .circle{
+        top: 88px;
+        right: 81px;
     }
 
 }
@@ -3942,6 +3985,7 @@ line-height: 45px;
     }
     .results__item{
         display: block;
+        max-width: 100%;
     }
     .results__content-bottom{
         display: none;
@@ -4143,7 +4187,7 @@ line-height: 28px;
     .reasons__img{
         position: absolute;
         right: 30px;
-        padding-top: 100px;
+        bottom: 0;
     }
     .reasons__img img{
         height: 320px;
@@ -4293,9 +4337,21 @@ line-height: 26px;
 .swiper2{
     margin-top: 40px;
 }
-.swiper-slide{
 
-}
+
+
+
+@keyframes rocket{
+
+    0%{
+        bottom: 120px;
+
+
+    }
+    100%{
+        bottom: 75px;
+    }
+    }
 }
 
 
