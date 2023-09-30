@@ -2900,9 +2900,7 @@ margin-top: 22px;
         margin-right: -800px;
     }
 
-    .how__cirle-phone{
-        display: none;
-    }
+
     .reasons .how__items{
         height: auto;
     }
@@ -2974,7 +2972,15 @@ margin-top: 22px;
         top: 88px;
         right: 81px;
     }
+    @keyframes how__cirle-phone{
 
+        0%{
+            left: 0px;
+        }
+        100%{
+            left: 1100px;
+        }
+        }
 }
 @media (max-width: 1439px) { 
 
@@ -3659,7 +3665,10 @@ margin-top: 22px;
     }
 }
 
-
+.how__cirle-phone img{
+    width: 500px;
+    height: 500px;
+}
 
 
 @media (min-width: 767px) {
@@ -3683,6 +3692,9 @@ margin-top: 22px;
     }
     .reasons .works__items{
         height: auto;
+    }
+    .how__cirle-phone{
+        display: none;
     }
 .tags__content{
     flex-direction: column;
