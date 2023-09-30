@@ -1855,7 +1855,6 @@ text-align: left;
 
 
 
-
 .popup-button {
     position: relative;
     display: inline-block;
@@ -1976,11 +1975,14 @@ margin-top: 15px;
 
 
 .results{
-    margin-top: 40px;
+    padding-top: 40px;
     background-color: #F5F5FC;
     z-index: 3;
     background: url(img/results-bg.png) bottom no-repeat;
     padding-bottom: 88px;
+    position: relative;
+    background-color: #F5F5FC;
+    z-index:10;
 }
 .results__title{
     font-family: 'Gilroy';
@@ -2160,7 +2162,7 @@ color: #202020;
     text-align: left;
     color: #F5F5FC;
     position: relative;
-    width: 217px;
+    width: 227px;
     margin: 0 auto;
     font-family: 'SF Pro Text';
 font-size: 22px;
@@ -2168,17 +2170,43 @@ font-weight: 600;
 line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
-
+padding-left: 60px;
+margin-top: 24px;
 }
 
+.how__cirle-phone {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+        animation: how__cirle-phone 3s linear infinite normal running 0s;
+        animation-direction: alternate;
+}
+@keyframes how__cirle-phone{
+
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1400px;
+    }
+    }
+
+
+
+
+.how__container{
+    position: relative;z-index: 4;
+}
 .contact__button::before{
     content: '';
     position: absolute;
-    left: 18px;
+    left: 22px;
   
-    background: url(img/header-rocket.png);
-    width: 16px;
-    height: 16px;
+    background: url(img/contact-rocket.png);
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -2333,12 +2361,15 @@ margin-top: 12px;
 .how__phone{
     position: absolute;
     bottom: 55px;
-    z-index: 4;
+    z-index: 5;
     left: 50%;
     transform: translate(-50%);
     width: 277.98px;
 height: 577.77px;
     background: url(img/phone-bg.png) no-repeat;
+}
+.how::after{
+    z-index: 4;
 }
 .how__shadow{
     position: absolute;
@@ -2869,7 +2900,9 @@ margin-top: 22px;
         margin-right: -800px;
     }
 
-
+    .how__cirle-phone{
+        display: none;
+    }
     .reasons .how__items{
         height: auto;
     }
