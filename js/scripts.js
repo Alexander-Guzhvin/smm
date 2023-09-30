@@ -17,6 +17,8 @@ BODY = document.getElementsByTagName('body')[0]
 OVERLAY = document.querySelector('.overlay')
 
 
+currentIndex = 0
+setReasonsAnimate(currentIndex)
 
 currentIndex2 = 0
 setReasonsAnimateTwo(currentIndex2)
