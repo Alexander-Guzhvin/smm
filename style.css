@@ -816,7 +816,13 @@ position: relative;
     }
 }
 
+.home{
+    background-color: #f5f5fc;
+}
+.header{
+    background-color: #f5f5fc;
 
+}
 .home__title{
     font-family: 'Gilroy';
 font-size: 60px;
@@ -2322,6 +2328,7 @@ line-height: 40px;
 letter-spacing: 0em;
 text-align: center;
 color: #FFFFFF;
+
 }
 .right-how__button{
     font-family: 'SF Pro Text';
@@ -4383,7 +4390,9 @@ line-height: 26px;
     margin-top: 40px;
 }
 
-
+.contact__img{
+    display: none;
+}
 
 
 @keyframes rocket{
@@ -4397,6 +4406,18 @@ line-height: 26px;
         bottom: 75px;
     }
     }
+
+
+
+    @keyframes stars{
+
+        0%{
+            top: -500px;
+        }
+        100%{
+            top: 920px;
+        }
+        }
 }
 
 
