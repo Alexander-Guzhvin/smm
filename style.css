@@ -861,7 +861,7 @@ background: #1341B2;
     width: 38px;
 }
 .video{
-    margin-left: 9.5px;
+    margin-left: 9.3px;
     margin-top: 7px;
     height: 567px;
     border-radius: 33px;
@@ -876,7 +876,23 @@ height: 577.77px;
     background: url(img/phone-bg.png) no-repeat;
 }
 
-
+.reviews__title{
+    font-family: 'Gilroy';
+font-size: 60px;
+font-weight: 900;
+line-height: 76px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: 100px;
+}
+.reviews__title span{
+    background: rgba(19, 65, 178, 1);
+    padding: 10px ;
+    color: #fff;
+}
+.swiper2{
+    margin-top: 80px;
+}
 
 .info-home{
     margin-top: 103px;
@@ -2353,7 +2369,6 @@ height: 577.77px;
 
 
 .reviews{
-    display: none;
 }
 .reviews__phone{
     z-index: 3;
@@ -2369,10 +2384,20 @@ height: 577.77px;
 
 
 
-
-
-
-
+.swiper-3d .swiper-slide-shadow-left{
+    background: none;
+    opacity: 0;
+}
+.swiper-slide{
+    background: none;
+    box-shadow: none;
+}
+.swiper-slide::after{
+    background: none;
+}
+.swiper-slide::before{
+    background: none;
+}
 
 .circle .items .works__image{
     position: relative;
@@ -3583,11 +3608,11 @@ margin-top: 22px;
 }
 .tags__item-1{
     position: sticky;
-    top: 82vh;
+    top: 30px;
 }
 .tags__item-2{
     position: sticky;
-    top: 87vh;
+    top: 90px;
 }
 .tags__item-3{
     position: sticky;
@@ -4207,6 +4232,50 @@ line-height: 26px;
 }
 .popup-wrapper {
     padding-top: 50px;
+}
+
+
+
+.swiper-slide{
+    width: 290px;
+    text-align: center;
+    margin: 0 auto;
+}
+.reviews__phone .video{
+    margin-left: 3px;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 35px;
+}
+.swiper-wrapper{
+    padding-bottom: 90px;
+}
+.swiper-pagination-bullet {
+    height: 18px;
+    width: 18px;
+    background: rgb(128, 128, 151);
+    align-items: center;
+
+
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{ 
+    border: 3px solid rgba(19, 65, 178, 1);
+    width: 19px;
+    height: 19px;
+    background: #fff;
+}
+.reviews__title{
+    font-size: 32px;
+    max-width: 180px;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 48px;
+}
+.reviews__title span{
+    padding: 6px;
+}
+.swiper2{
+    margin-top: 40px;
 }
 }
 

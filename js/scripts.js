@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let bottomSection = document.querySelector('.bottom_section .title .swiper')
 
 	if (bottomSection) {
-		new Swiper('.bottom_section .title .swiper', {
+		new Swiper('.bottom_section .title', {
 			loop: true,
 			speed: 500,
 			spaceBetween: 12,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Карусель отзывов
 	const reviewsSliders = [],
-		reviews = document.querySelectorAll('.reviews .swiper')
+		reviews = document.querySelectorAll('.reviews')
 
 	reviews.forEach(function (el, i) {
 		el.classList.add('reviews_s' + i)
@@ -282,20 +282,34 @@ const swiper = new Swiper('.swiper2', {
 	slidesPerView: 1,
 	slidesPerGroup: 1,
 	centeredSlides:true,
+	effect: "coverflow",
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: "auto",
 	pagination: {
-	  el: '.swiper-pagination',
+		el: '.swiper-pagination',
+	  },
+	autoplay: {
+	  delay: 3000
 	},
-  
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
+	coverflowEffect: {
+	  rotate: 0,
+	  stretch: 0,
+	  depth: 100,
+	  modifier: 2,
+	  slideShadows: false,
 	},
-  
-	// And if we need scrollbar
-	scrollbar: {
-	  el: '.swiper-scrollbar',
-	},
+
+	responsive: [
+		{
+		  breakpoint: 768,
+		  settings: {
+			spaceBetween: 100,
+			effect:'normal',
+		  },
+
+		},
+	]
   });
 
 
