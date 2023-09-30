@@ -279,37 +279,42 @@ function countUpLikes() {
 
 
 const swiper = new Swiper('.swiper2', {
-	slidesPerView: 1,
-	slidesPerGroup: 1,
-	centeredSlides:true,
 	effect: "coverflow",
-	grabCursor: true,
 	centeredSlides: true,
-	slidesPerView: "auto",
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 0,
+		depth: 100,
+		modifier: 2,
+		slideShadows: false,
+	  },
 	pagination: {
 		el: '.swiper-pagination',
 	  },
-	autoplay: {
-	  delay: 3000
-	},
-	coverflowEffect: {
-	  rotate: 0,
-	  stretch: 0,
-	  depth: 100,
-	  modifier: 2,
-	  slideShadows: false,
-	},
+	  320: {
+		slidesPerView: 3,
+		centeredSlides: true,
+	  },
+	  breakpoints: {
 
-	responsive: [
-		{
-		  breakpoint: 768,
-		  settings: {
-			spaceBetween: 100,
-			effect:'normal',
-		  },
+		768: {
+			slidesPerView: 3,
+			slidesPerGroup: 1,
+			centeredSlides:true,
+
+			grabCursor: true,
+			loop: 'false',
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			autoplay: {
+			  delay: 3000
+			},
 
 		},
-	]
+	}
   });
 
 

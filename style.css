@@ -2645,7 +2645,23 @@ margin-top: 22px;
 
 
 
+.swiper-wrapper{
+    padding-bottom: 90px;
+}
+.swiper-pagination-bullet {
+    height: 18px;
+    width: 18px;
+    background: rgb(128, 128, 151);
+    align-items: center;
 
+
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{ 
+    border: 3px solid rgba(19, 65, 178, 1);
+    width: 19px;
+    height: 19px;
+    background: #fff;
+}
 
 
 
@@ -4276,6 +4292,9 @@ line-height: 26px;
 }
 .swiper2{
     margin-top: 40px;
+}
+.swiper-slide{
+
 }
 }
 
