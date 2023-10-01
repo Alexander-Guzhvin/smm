@@ -254,28 +254,7 @@ function setReasonsAnimateThree(index) {
 
 
 // Анимация чисел
-function countUpLikes() {
-	var time = 15,
-		cc = 1
 
-	$('#likesCount').each(function() {
-		let i = 700,
-			num = $(this).data('num'),
-			step = 1000 * time / num,
-			that = $(this),
-			int = setInterval(() => {
-				if (i <= num) {
-					that.html(i)
-				} else {
-					cc = cc + 2
-					clearInterval(int)
-					countUpLikes()
-				}
-
-			i++
-		}, step)
-	})
-}
 
 
 
@@ -442,3 +421,50 @@ if (animItems.length > 0) {
 
 
 }
+
+
+
+const time = 100000;
+const step = 1;
+
+function outNum(num, elem) {
+  let e = document.querySelector("#out");
+  n = 0;
+  let t = Math.round(time / (num / step));
+  let interval = setInterval(() => {
+    n = n + step;
+    if (n == num) {
+      clearInterval(interval);
+    }
+    e.innerHTML = n;
+  }, t);
+}
+
+outNum(999, "#out");
+
+
+
+
+
+
+
+
+
+
+
+function onEntry(entry) {
+	entry.forEach(change => {
+	  if (change.isIntersecting) {
+	   change.target.classList.add('element-show');
+	  }
+	});
+  }
+  
+  let options = {
+	threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.element-animation');
+  
+  for (let elm of elements) {
+	observer.observe(elm);
+  }

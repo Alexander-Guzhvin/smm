@@ -3676,7 +3676,9 @@ margin-top: 22px;
     width: 500px;
     height: 500px;
 }
-
+.reviews-like{
+    margin-right: 7px;
+}
 
 @media (min-width: 767px) {
     .about__content-mob{
@@ -3689,6 +3691,9 @@ margin-top: 22px;
         display: none;
     }
     .about__stars-mob{
+        display: none;
+    }
+    .tags__man-mob{
         display: none;
     }
 }
@@ -3726,21 +3731,45 @@ margin-top: 22px;
 }
 .tags__item-2{
     position: sticky;
-    top: 90px;
+    top: 110px;
 }
 .tags__item-3{
     position: sticky;
+    top: 170px;
     z-index: 3;
 }
 .tags__man{
     bottom: -100px;
     z-index: 4;
     left: 0;
+    display: none;
 }
+
 .tags__man img{
     height: 250px;
     transform: scale(-1, 1)
 }
+.tags__man-mob{
+    position: absolute;
+    bottom: -100px;
+    z-index: 4;
+    left: 0;
+}
+.tags__man-mob img{
+    height: 250px;
+    transform: scale(-1, 1)
+}
+.element-animation {
+
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  
+  .element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
 .tags__approved{
     position: absolute;
     z-index: 4;
