@@ -3688,6 +3688,9 @@ margin-top: 22px;
     .popup__img-mini-mob{
         display: none;
     }
+    .about__stars-mob{
+        display: none;
+    }
 }
 
 @media (max-width: 767px) { 
@@ -4394,7 +4397,16 @@ line-height: 26px;
     display: none;
 }
 
-
+.about__stars{
+    display: none;
+}
+.tags {
+    background: #f5f5fc;
+}
+.home__phone{
+    left: 50%;
+    transform: translate(-52%);
+}
 @keyframes rocket{
 
     0%{
@@ -4407,7 +4419,12 @@ line-height: 26px;
     }
     }
 
-
+    .about__stars-mob{
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        animation: stars 4s linear infinite normal running 0s;
+    }
 
     @keyframes stars{
 
