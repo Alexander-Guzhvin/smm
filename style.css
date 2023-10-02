@@ -4436,6 +4436,16 @@ line-height: 26px;
     left: 50%;
     transform: translate(-52%);
 }
+.how:after{
+    background: url(img/how__after-mob.png);
+    height: 26px;
+    background-size: cover;
+}
+.how:before{
+    background: url(img/how__before-mob.png);
+    height: 26px;
+    background-size: cover;
+}
 @keyframes rocket{
 
     0%{
