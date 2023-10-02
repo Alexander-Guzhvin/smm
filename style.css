@@ -4390,7 +4390,6 @@ line-height: 26px;
 .swiper-slide{
     width: 290px;
     text-align: center;
-    margin: 0 auto;
 }
 .reviews__phone .video{
     margin-left: 3px;
@@ -4460,6 +4459,9 @@ line-height: 26px;
     background: url(img/how__before-mob.png);
     height: 26px;
     background-size: cover;
+}
+.swiper-slide-active{
+
 }
 @keyframes rocket{
 

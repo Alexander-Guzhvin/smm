@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let firstSection = document.querySelector('.first_section .title .swiper')
 
 	if (firstSection) {
-		new Swiper('.first_section .title .swiper', {
+		new Swiper('.first_section .title', {
 			loop: true,
 			speed: 500,
 			spaceBetween: 12,
@@ -44,30 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		})
 	}
+	const reviewsSliders = [],
+		reviews = document.querySelectorAll('.reviews')
+
 
 
 	// Смена слов в нижнем блоке
 	let bottomSection = document.querySelector('.bottom_section .title .swiper')
 
-	if (bottomSection) {
-		new Swiper('.bottom_section .title', {
-			loop: true,
-			speed: 500,
-			spaceBetween: 12,
-			slidesPerView: 1,
-			direction: 'vertical',
-			allowTouchMove: false,
-			autoplay: {
-				delay: 2000,
-				disableOnInteraction: false,
-			},
-		})
-	}
-
-
-	// Карусель отзывов
-	const reviewsSliders = [],
-		reviews = document.querySelectorAll('.reviews')
 
 	reviews.forEach(function (el, i) {
 		el.classList.add('reviews_s' + i)
@@ -127,6 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
 	})
+
+	if (bottomSection) {
+		new Swiper('.bottom_section .title', {
+			loop: true,
+			speed: 500,
+			spaceBetween: 12,
+			slidesPerView: 1,
+			direction: 'vertical',
+			allowTouchMove: false,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+		})
+	}
+
+
+	// Карусель отзывов
+
 
 
 	// First section animation
@@ -259,44 +262,6 @@ function setReasonsAnimateThree(index) {
 
 
 
-const swiper = new Swiper('.swiper2', {
-	effect: "coverflow",
-	centeredSlides: true,
-	coverflowEffect: {
-		rotate: 0,
-		stretch: 0,
-		depth: 100,
-		modifier: 2,
-		slideShadows: false,
-	  },
-	pagination: {
-		el: '.swiper-pagination',
-	  },
-	  320: {
-		slidesPerView: 3,
-		centeredSlides: true,
-	  },
-	  breakpoints: {
-
-		768: {
-			slidesPerView: 3,
-			slidesPerGroup: 1,
-			centeredSlides:true,
-
-			grabCursor: true,
-			loop: 'false',
-			loop: false,
-			speed: 500,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			autoplay: {
-			  delay: 3000
-			},
-
-		},
-	}
-  });
 
 
 
@@ -468,3 +433,60 @@ function onEntry(entry) {
   for (let elm of elements) {
 	observer.observe(elm);
   }
+
+
+
+
+
+
+
+
+  const swiper = new Swiper('.swiper2', {
+	effect: "coverflow",
+	centeredSlides: true,
+	slidesPerView: 3,
+    clickable:true,
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 0,
+		depth: 100,
+		modifier: 2,
+		slideShadows: false,
+	  },
+	pagination: {
+		el: '.swiper-pagination',
+        clickable:true,
+	  },
+
+	  breakpoints: {
+        358: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            sumulateTouch:true,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+            coverflowEffect: {
+		rotate: 0,
+		stretch: 50,
+		depth: 0,
+		modifier: 2,
+		slideShadows: false,
+	  },
+        },
+		768: {
+			slidesPerView: 3,
+			slidesPerGroup: 1,
+			centeredSlides:true,
+			loop: false,
+			speed: 500,
+
+
+			autoplay: {
+			  delay: 3000
+			},
+
+		},
+
+	}
+  });
