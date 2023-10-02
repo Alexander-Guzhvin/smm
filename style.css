@@ -4443,6 +4443,14 @@ line-height: 26px;
     left: 50%;
     transform: translate(-52%);
 }
+.reviews__video {
+    margin-left: 3.9px;
+    margin-top: 6px;
+    height: 565px;
+    border-radius: 33px;
+    z-index: 2;
+    width: 263.5px;
+}
 .how:after{
     background: url(img/how__after-mob.png);
     height: 26px;
