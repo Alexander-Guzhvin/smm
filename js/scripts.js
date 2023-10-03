@@ -225,7 +225,7 @@ function setReasonsAnimate(index) {
 			: currentIndex++
 
 		setReasonsAnimate(currentIndex)
-	}, 3000)
+	}, 2000)
 }
 
 // Reasons animation
@@ -239,7 +239,7 @@ function setReasonsAnimateTwo(index) {
 			: currentIndex2++
 
 		setReasonsAnimateTwo(currentIndex2)
-	}, 1400)
+	}, 700)
 }
 
 function setReasonsAnimateThree(index) {
@@ -389,7 +389,7 @@ if (animItems.length > 0) {
 
 
 
-const time = 100000;
+const time = 500000;
 const step = 1;
 
 function outNum(num, elem) {
@@ -443,13 +443,12 @@ function onEntry(entry) {
 
   const swiper = new Swiper('.swiper2', {
 	effect: "coverflow",
-	centeredSlides: true,
-	slidesPerView: 3,
+	slidesPerView:4,
     clickable:true,
 	coverflowEffect: {
 		rotate: 0,
-		stretch: 0,
-		depth: 100,
+		stretch: 11,
+		depth:50,
 		modifier: 2,
 		slideShadows: false,
 	  },
@@ -460,18 +459,26 @@ function onEntry(entry) {
 
 	  breakpoints: {
         358: {
-            slidesPerView: 1,
-            centeredSlides: true,
-
+            slidesPerView: 'auto',
+			effect: "normal",
+			spaceBetween:10,
+			centeredSlides: true,
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 0,
+				depth:0,
+				modifier: 0,
+				slideShadows: false,
+			  },
         },
 		768: {
-			slidesPerView: 3,
+			slidesPerView: 4,
 			slidesPerGroup: 1,
-			centeredSlides:true,
 			loop: false,
+			centeredSlides: true,
 			speed: 500,
-
-
+			initialSlide:2,
+			spaceBetween: 20,
 			autoplay: {
 			  delay: 3000
 			},
