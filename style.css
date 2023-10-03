@@ -1280,9 +1280,11 @@ text-align: left;
     0%
     {
         transform: rotate(0);
+        
     }
     33.333%
     {
+       
         transform: rotate(60deg);
     }
     66.666%
@@ -2457,12 +2459,92 @@ height: 577.77px;
     position: relative;
     right: 0;
 }
-.reasons .works__items .circle{
-    width: 290px;
-    height: 290px;
-    top: 100px;
+
+.reasons .works__items .circle {
+    width: 200px;
+    height: 200px;
+    top: 150px;
     left: auto;
-    right: 87px;
+    right: 135px;
+}
+
+
+
+.reasons .works__items .circle3{
+    animation-name: works-Circle3;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes works-Circle3
+{
+    0%
+    {
+        transform: scale(0.66) rotate(0);
+    }
+    33.333%
+    {
+        transform: scale(0.66) rotate(70deg);
+    }
+    75%
+    {
+        transform: scale(0.66) rotate(-70deg);
+    }
+    100%
+    {
+        transform: scale(0.66) rotate(0);
+    }
+}
+
+
+
+
+
+.reasons .works__items .circle4{
+    animation-name: works-Circle4;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes works-Circle4
+{
+    0%
+    {
+        transform:scale(0.50) rotate(0);
+    }
+    20%
+    {
+        transform:scale(0.50) rotate(40deg);
+    }
+    100%
+    {
+        transform:scale(0.50) rotate(360deg);
+    }
+}
+
+
+.reasons .works__items .circle5{
+    animation-name: works-Circle5;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes works-Circle5
+{
+    0%
+    {
+        transform: scale(0.3) rotate(0);
+    }
+    50%
+    {
+        transform: scale(0.3) rotate(360deg);
+    }
+    100%
+    {
+        transform: scale(0.3) rotate(0);
+    }
 }
 
 
@@ -2907,6 +2989,22 @@ margin-top: 22px;
     z-index: 2;
     width: 262.5px;
 }
+
+
+
+
+
+.reasons .works__items .circle3{
+    transform: scale(0.7);
+}
+
+
+
+
+
+
+
+
 @media (max-width: 1899px) { 
 
     .first_section .image
@@ -2982,9 +3080,9 @@ margin-top: 22px;
     .tags__approved{
         right: 180px;
     }
-    .reasons .works__items .circle{
-        top: 88px;
-        right: 81px;
+    .reasons .works__items .circle {
+        top: 134px;
+        right: 127px;
     }
     @keyframes how__cirle-phone{
 
@@ -4207,20 +4305,20 @@ z-index: 1;
         right: auto;
         left: 50%;
         transform: translate(-50%);
+        width: 235px;
     }
     .works__img img{
-        height: 147px;
-        width: 212px;
+        height: 177px;
+        width: 235px;
     }
     .reasons .works__items .circle{
-        height: 160px;
-        width: 160px;
+            height: 140px;
+            width: 140px;
     }
-    .reasons .works__items .image{
-        left: -410px;
-        top: -60px;
-
-z-index: 1;
+    .reasons .works__items .image {
+        left: -367px;
+        top: -96px;
+        z-index: 1;
     }
     .works__subtitle{
         text-align: center;
@@ -4245,7 +4343,7 @@ z-index: 1;
         padding-bottom: 100px;
     }
     .works__img{
-        bottom: -356px;
+        bottom: -376px;
     }
 
 
@@ -4463,6 +4561,7 @@ line-height: 26px;
 .swiper-slide-active{
 
 }
+
 @keyframes rocket{
 
     0%{
