@@ -103,7 +103,7 @@ body{
     font-weight: 400;
     font-family: 'SF Pro Text';
     color: #000000;
-    overflow-x: hidden;
+    position: relative;
     background: #F5F5FC;
 }
 ._container{
