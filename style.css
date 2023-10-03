@@ -883,7 +883,8 @@ background: #1341B2;
     z-index: 3;
     width: 277.98px;
 height: 577.77px;
-    background: url(img/phone-bg.png) no-repeat;
+    background: url(img/phone-bg.png) no-repeat;;
+
 }
 
 .reviews__title{
@@ -2373,9 +2374,10 @@ margin-top: 12px;
     z-index: 5;
     left: 50%;
     transform: translate(-50%);
-    width: 277.98px;
-height: 577.77px;
-    background: url(img/phone-bg.png) no-repeat;
+    width: 335.98px;
+height: 665.77px;
+    background: url(img/samsung.png) no-repeat;
+    background-size: 100% 100%;
 }
 .how::after{
     z-index: 4;
@@ -2989,13 +2991,14 @@ margin-top: 22px;
     z-index: 2;
     width: 262.5px;
 }
-.how-video{
-    margin-left: 9.3px;
-    margin-top: 6px;
+.how-video {
+    margin-left: 36.3px;
+    margin-top: 50px;
     height: 565px;
-    border-radius: 33px;
+    border-radius: 34px;
     z-index: 2;
     width: 262.5px;
+    transform: scale(1.196);
 }
 
 
@@ -4209,7 +4212,7 @@ margin-top: 22px;
         display: none;
     }
     .how__phone-mob{
-        width: 242.98px;
+        width: 250.98px;
     height: 500.77px;
         background: url(img/phone-bg.png) 0 0/100% 100% no-repeat;
         margin-top: 30px;

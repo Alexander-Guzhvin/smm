@@ -462,17 +462,7 @@ function onEntry(entry) {
         358: {
             slidesPerView: 1,
             centeredSlides: true,
-            sumulateTouch:true,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-            coverflowEffect: {
-		rotate: 0,
-		stretch: 50,
-		depth: 0,
-		modifier: 2,
-		slideShadows: false,
-	  },
+
         },
 		768: {
 			slidesPerView: 3,
