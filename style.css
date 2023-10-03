@@ -3890,9 +3890,16 @@ margin-top: 22px;
 
 
 
-    .header{
-        margin-top: 10px;
-    }
+.header {
+    margin-top: 0px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 0;
+}
+.main{
+    padding-top: 50px;
+}
     .header__button button{
         margin-top: 0px
     }
