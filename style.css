@@ -29,9 +29,7 @@ img {
 aside, nav, footer, header, section, main {
 	display: block;
 }
-html, body {
-    overflow-x: hidden;
-}
+
 h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
 	font-weight: inherit;
@@ -105,6 +103,9 @@ body{
     color: #000000;
     position: relative;
     background: #F5F5FC;
+}
+html, body {
+    overflow-x: hidden;
 }
 ._container{
     max-width: 1310px;
@@ -1499,7 +1500,7 @@ text-align: left;
 }
 
 
-.body-reasons__title{
+.body-reasons__title-mob, .body-reasons__title{
     color: #F5F5FC;
     font-family: 'Gilroy';
 font-size: 60px;
@@ -1511,7 +1512,7 @@ width: 740px;
 max-width: 100%;
 }
 
-.body-reasons__title span{
+.body-reasons__title-mob span, .body-reasons__title span{
     background: #F9BB19;
     color: #202020;
     padding: 0 15px;
@@ -2747,7 +2748,7 @@ margin-top: 22px;
     animation: rocket 2s linear infinite normal running 0s;
     animation-direction: alternate;
 }
-.body-reasons__title span{
+.body-reasons__title-mob span, .body-reasons__title span{
     animation: title 3s linear infinite normal running 0s;
     animation-direction: alternate;
 }
@@ -3825,6 +3826,9 @@ margin-top: 22px;
     .tags__man-mob{
         display: none;
     }
+    .body-reasons__title-mob{
+        display: none;
+    }
 }
 
 @media (max-width: 767px) { 
@@ -3839,6 +3843,10 @@ margin-top: 22px;
     }
     .how__cirle-phone{
         display: none;
+    }
+    .about__stars-mob img{
+        width: 220px;
+        height: 600px;
     }
 .tags__content{
     flex-direction: column;
@@ -4399,7 +4407,11 @@ z-index: 1;
     .body-reasons__title{
 font-size: 20px;
 line-height: 28px;
-
+        display: none;
+    }
+    .body-reasons__title-mob{
+        font-size: 20px;
+line-height: 28px;
     }
     .reasons__content{
         flex-direction: column;
