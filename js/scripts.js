@@ -226,21 +226,27 @@ function setReasonsAnimate(index) {
 
 		setReasonsAnimate(currentIndex)
 	}, 2000)
+	
 }
 
 // Reasons animation
 function setReasonsAnimateTwo(index) {
 	$('.reasons__content .body-reasons__columns .body-reasons__item').removeClass('animating')
 	$('.reasons__content .body-reasons__columns .body-reasons__item').eq(index).addClass('animating')
+		setTimeout(() => {
+				(currentIndex2 + 1) == $('.reasons__content .body-reasons__columns .body-reasons__item').length
+					? currentIndex2 = 0
+					: currentIndex2++
 
-	setTimeout(() => {
-		(currentIndex2 + 1) == $('.reasons__content .body-reasons__columns .body-reasons__item').length
-			? currentIndex2 = 0
-			: currentIndex2++
-
-		setReasonsAnimateTwo(currentIndex2)
-	}, 700)
+				setReasonsAnimateTwo(currentIndex2)
+			}, 600)
 }
+
+
+
+
+
+
 
 function setReasonsAnimateThree(index) {
 	$('.about__content-mob .about__item-mob').removeClass('animating')
@@ -253,10 +259,9 @@ function setReasonsAnimateThree(index) {
 
 		setReasonsAnimateThree(currentIndex3)
 	}, 3000)
+
 }
 
-
-// Анимация чисел
 
 
 
@@ -463,6 +468,7 @@ function onEntry(entry) {
 			effect: "normal",
 			spaceBetween:10,
 			centeredSlides: true,
+			clickable:true,
 			coverflowEffect: {
 				rotate: 0,
 				stretch: 0,
