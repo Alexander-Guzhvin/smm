@@ -26,6 +26,8 @@ setReasonsAnimateTwo(currentIndex2)
 currentIndex3 = 0
 setReasonsAnimateThree(currentIndex3)
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Смена слов в первом блоке
 	let firstSection = document.querySelector('.first_section .title .swiper')
@@ -258,13 +260,10 @@ function setReasonsAnimateThree(index) {
 			: currentIndex3++
 
 		setReasonsAnimateThree(currentIndex3)
-	}, 3000)
+
+	}, 400)
 
 }
-
-
-
-
 
 
 

@@ -2441,7 +2441,9 @@ height: 665.77px;
     width: 277.98px;
     height: 577.77px;
     background: url(img/phone-bg.png) no-repeat;
+    background-size: 100% 100%;
 } 
+
 .swiper-wrapper{
     margin: 0 auto;
 
@@ -3505,8 +3507,12 @@ padding-left: 40px;
         width: 84px;
         height: 80px;
     }
+    .about__item-mob{
 
-
+    }
+    .about__item-mob.animating{
+        opacity: 0.5;
+    }
     .first_section .desc .multiplication + *
     {
         font-size: 20px;
@@ -3841,6 +3847,9 @@ padding-left: 40px;
         display: none;
     }
     .how__phone-mob{
+        display: none;
+    }
+    .results__item-mob{
         display: none;
     }
     .popup__img-mini-mob{
@@ -4233,13 +4242,16 @@ line-height: 45px;
     .results__content-top{
         flex-direction: column;
         row-gap: 40px;
+        position: relative;
     }
     .results__card img{
-        width: 299px;
+        width: auto;
     }
     .results__item{
         display: block;
         max-width: 100%;
+        position: sticky;
+        top: 100px;
     }
     .results__content-bottom{
         display: none;
@@ -4258,6 +4270,10 @@ margin-top: 22px;
     }
     .how__phone{
         display: none;
+    }
+    .results__text{
+        width: 320px;
+        margin: 0 auto;
     }
     .how__phone-mob{
         width: 250.98px;
@@ -4618,10 +4634,10 @@ line-height: 26px;
 .reviews__video {
     margin-left: 3.9px;
     margin-top: 6px;
-    height: 565px;
+    height: 480px;
     border-radius: 33px;
     z-index: 2;
-    width: 263.5px;
+    width: 213.5px;
 }
 .how:after{
     background: url(img/how__after-mob.png);
