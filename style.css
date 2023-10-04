@@ -105,7 +105,7 @@ body{
     background: #F5F5FC;
 
 }
-html, body {
+ body {
     overflow-x: hidden;
 }
 ._container{
@@ -3967,6 +3967,7 @@ padding-left: 40px;
 }
 .main{
     padding-top: 50px;
+
 }
     .header__button button{
         margin-top: 0px
